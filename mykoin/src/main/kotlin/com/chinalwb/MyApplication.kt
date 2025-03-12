@@ -1,11 +1,13 @@
 package com.chinalwb
 
-import com.chinalwb.c3.MyKoin.startMyKoin
-import com.chinalwb.c3.appModule
+import com.chinalwb.dsl.appModule
+import com.chinalwb.c4.startKoin
 
 class MyApplication {
     fun onCreate() {
-        startMyKoin(modules = listOf(appModule))
+        startKoin {
+            modules(appModule)
+        }
 
         // Create an instance of ActivityA and call its show() function
         val activity = ActivityA()
