@@ -1,7 +1,5 @@
 package com.chinalwb.c4
 
-import com.chinalwb.c3.Module
-
 class KoinApp {
     val modules = mutableListOf<Module>()
 

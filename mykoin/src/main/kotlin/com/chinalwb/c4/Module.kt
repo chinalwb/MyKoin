@@ -1,8 +1,9 @@
-package com.chinalwb.c3
+package com.chinalwb.c4
 
 // Module class to define dependencies
 class Module {
-    private val definitions = mutableListOf<Triple<Class<*>, () -> Any, Boolean>>() // (Class, Provider, IsFactory)
+    // (Class, Provider, IsFactory)
+    private val definitions = mutableListOf<Triple<Class<*>, () -> Any, Boolean>>()
 
     fun <T : Any> single(definition: () -> T) {
         definitions.add(Triple(definition().javaClass, definition, false))

@@ -1,6 +1,6 @@
 package com.chinalwb
 
-import com.chinalwb.dsl.appModule
+import com.chinalwb.c4.appModule
 import com.chinalwb.c4.startKoin
 
 class MyApplication {
