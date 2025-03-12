@@ -1,6 +1,6 @@
 package com.chinalwb
 
-// hello
+// by inject() ctrl + 6
 fun main() {
     MyApplication().onCreate()
 }
