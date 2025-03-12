@@ -1,5 +1,8 @@
 package com.chinalwb
 
+import com.chinalwb.c2.inject
+
+
 class ActivityA {
 
     private val viewModel: ViewModelA by inject()

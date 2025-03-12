@@ -1,9 +1,11 @@
 package com.chinalwb
 
+import com.chinalwb.c3.MyKoin.startMyKoin
+import com.chinalwb.c3.appModule
+
 class MyApplication {
     fun onCreate() {
-        // Manually register dependencies (like Koin's module system)
-        DIContainer.register(ViewModelA::class.java, ViewModelA())
+        startMyKoin(modules = listOf(appModule))
 
         // Create an instance of ActivityA and call its show() function
         val activity = ActivityA()
