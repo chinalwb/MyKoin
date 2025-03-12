@@ -2,7 +2,7 @@ package com.chinalwb
 
 // hello
 // startMyKoin ctrl+5
-// DSL ctrl+6
+// DSL ctrl+7
 fun main() {
     MyApplication().onCreate()
 }
