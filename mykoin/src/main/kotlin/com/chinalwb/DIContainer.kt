@@ -10,8 +10,7 @@ object DIContainer {
 
     // Resolve dependencies
     fun <T : Any> resolve(clazz: Class<T>): T {
-        // Ctrl + 3
-        throw IllegalStateException("No instance found for ${clazz.simpleName}")
+        return instances[clazz] as? T ?: throw IllegalStateException("No instance found for ${clazz.simpleName}")
      }
 }
 
@@ -27,6 +26,3 @@ object DIContainer {
 
 
 
-
-// todo3
-// return instances[clazz] as? T ?: throw IllegalStateException("No instance found for ${clazz.simpleName}")

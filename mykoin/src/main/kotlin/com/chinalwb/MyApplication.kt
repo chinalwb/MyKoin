@@ -3,7 +3,7 @@ package com.chinalwb
 class MyApplication {
     fun onCreate() {
         // Manually register dependencies (like Koin's module system)
-        // Ctrl+1
+        DIContainer.register(ViewModelA::class.java, ViewModelA())
 
         // Create an instance of ActivityA and call its show() function
         val activity = ActivityA()
